@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftFix Automobile</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+   
+  
+
+  <!----------------------------- Header ----------------------------->
+
+  <header class="header">
+    <div class="logo">
+      <a href="#home">
+        <img src="./images/logo.png" width="70px" alt="logo">
+      </a>
+    </div>
+    <ul class="main-menu">
+      <li>
+        <a href="#home" class="menu-link">Home</a>
+      </li>
+      <li>
+        <a href="#service" class="menu-link">Services</a>
+      </li>
+      <li>
+        <a href="#faq" class="menu-link">FAQ</a>
+      </li>
+      <li>
+        <a href="#about-us" class="menu-link">About us</a>
+      </li>
+      <li>
+        <a href="#contacts" class="menu-link">Contacts</a>
+      </li>
+    </ul>
+  </header>
+
+  <!--------------------------------- Home section ------------------------------------------>
+
+  <section class="home" id="home">
+    <main class="home-text">
+      <h1>Automobile Solutions</h1>
+      <h3>Precision repairs and peak performance</h3>
+      <h3>restoration for your vehicles</h3>
+
+      <!------------------------- Book Now Modal ---------------------------->
+
+      <button id="myBtn">Book Now</button>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form id="bookingForm">
+            <div class="serviceType">
+              <label for="serviceType">Service Type:</label>
+              <select id="serviceType" name="serviceType" required>
+                <option value="engine">Engine Diagnostics</option>
+                <option value="brake">Brake System Repair</option>
+                <option value="brake">Electrical System Maintenance:</option>
+                <option value="brake">Oil Change and Fluid Services</option>
+                <option value="brake">Tire Rotation and Alignment</option>
+                <option value="brake">Transmission Repair</option>
+                <option value="brake">Air Conditioning Service</option>
+                <option value="brake">Exhaust System Inspection and Repair</option>
+                <option value="brake">Suspension System Maintenance</option>
+                <option value="brake">Fluid Leak Detection and Repair</option>
+                <option value="brake">Others</option>
+                <!-- will add other service options if need be. -->
+              </select>
+            </div>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+            <input type="tel" id="phone" name="phone" placeholder="Your Mobile Number" required>
+            <input type="text" id="carModel" name="carModel" placeholder="Your Car Model" required>
+            <input type="date" id="preferredDate" name="preferredDate" required>
+            <textarea id="additionalInfo" name="additionalInfo" rows="10" cols="35" placeholder="More Information about your issue"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <!--------------------------------- Service section ------------------------------------------>
+
+  <section class="service" id="service">
+
+    <div class="container main-text">
+        <h2>OUR SERVICES</h2>
+    </div>
+
+    <div class="service-box">
+
+      <div class="project-container">
+        <img src="images/car-engine.png" alt="">
+        <h4>Engine Diagnostics</h4>
+          <p>Our advanced engine diagnostics service employs cutting-edge technology to identify and 
+            resolve issues affecting your vehicle's performance. 
+            Our skilled technicians use state-of-the-art tools to 
+            pinpoint the root cause of engine problems, ensuring optimal functionality.</p>
+      </div>
+
+      <div class="project-container">
+        <img src="images/air-conditioning.png" alt="">
+        <h4>Air Conditioning Service</h4>
+          <p>Beat the heat with our air conditioning service. We inspect, clean, 
+            and recharge your vehicle's AC system, ensuring efficient cooling. 
+            Don't let a malfunctioning AC system compromise your comfort—let us keep it in top condition.</p>
+      </div>
+
+      <div class="project-container">
+        <img src="images/car-brakes.png" alt="">
+        <h4>Brake System Repair</h4>
+          <p>Trust our expert team for comprehensive brake system repairs. 
+            From brake pad replacements to addressing issues with the braking mechanism, we ensure your vehicle's safety. 
+            Our precision brake repairs are designed to enhance stopping power and responsiveness.</p>
+      </div>
+
+      <div class="project-container">
+        <img src="images/car-tires.png" alt="">
+        <h4>Tire Rotation and Alignment</h4>
+          <p>Experience smoother rides and extended tire life with our tire rotation and alignment services. 
+            Our skilled technicians rotate tires to promote even wear, 
+            and precise alignment adjustments ensure proper handling and steering control.</p>
+      </div>
+
+      <div class="project-container">
+        <img src="images/electrical-car.png" alt="">
+        <h4>Electrical Maintenance</h4>
+          <p>Our electrical system maintenance service covers a thorough inspection and upkeep of 
+            your vehicle's electrical components. From the battery to the wiring, 
+            we ensure that every element functions seamlessly, 
+            preventing electrical issues that can disrupt your driving experience.</p>
+      </div>
+    </div>
+
+    <aside class="view-more">View More</aside>
+  </section>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

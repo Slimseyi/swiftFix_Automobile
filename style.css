@@ -1,0 +1,355 @@
+
+
+@font-face{
+    font-family: abel;
+    src:url(./fonts/Abel-Regular.ttf);
+  }
+
+  @font-face{
+    font-family: inter-semiBold;
+    src:url(./fonts/Inter-SemiBold.ttf);
+  }
+
+  @font-face{
+    font-family: poppins-medium;
+    src:url(./fonts/Poppins-Medium.ttf);
+  }
+
+  @font-face{
+    font-family: poppins-reg;
+    src:url(./fonts/Poppins-Regular.ttf);
+  }
+
+  @font-face{
+    font-family: poppins-semBold;
+    src:url(./fonts/Poppins-SemiBold.ttf);
+  }
+
+
+
+  /*KEYFRAMES*/
+
+ 
+  /*KEYFRAMES*/
+
+  :root{
+    --bg-color-first: #001C39;
+    --silver-grey: #808080;
+    --text-color-light: #ffffff;
+    --black-color: #000000;
+    --red-accent: #FF4136;
+
+    --text-big: 5rem;
+    --text-h2: 3rem;
+    --text-p: 1.1rem;
+    --inter-semiBold: inter-semiBold;
+    --abel: abel;
+    --poppins-Sembold: poppins-semBold;
+    --poppins-reg: poppins-reg;
+  }
+
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--red-accent); 
+  }
+  
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--sec-color);
+  
+  }
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'opensan-reg', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    transition: .45s linear;
+    
+  }
+
+
+body{
+  background: var(--bg-color-first);
+  color: var(--text-color-light);
+}
+
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color-first);
+    padding: 34px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+  }
+
+
+  .main-menu{
+    display: flex;
+  }
+
+  .main-menu a{
+    color: var(--text-color-light);
+    font-family: inter-semiBold;
+    font-size: 15px;
+    margin: 0 25px ;
+    transition: all .45s ease;
+  }
+
+  .main-menu a:hover{
+    color: var(--red-accent);
+
+  }
+
+
+  section{
+    padding: 110px 12% 120px;
+  }
+
+  .home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/Background-first.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  main{
+    margin: auto;
+  }
+
+  .home-text{
+    text-align: center;
+    
+  }
+
+  .home-text h1{
+    font-family: var(--abel);
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+
+  .home-text h3{
+    font-family: var(--abel);
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
+
+  .home-text button{
+    background: var(--red-accent);
+    color: var(--text-color-light);
+    font-family: var(--abel);
+    font-size: 1.2rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+
+
+
+ 
+
+  /* Add your existing styles here */
+
+/* Modal Styles */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+
+
+.modal-content {
+  background: var(--bg-color-first);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  position: relative;
+  border-radius: 1.5rem;
+  width: 60%; /* Could be more or less, depending on screen size */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+label{
+ background: var(--text-color-light);
+ border-radius: 1rem;
+ padding: 0.5rem 0.6rem;
+}
+
+#preferredDate{
+  background-color: var(--red-accent);
+}
+
+#serviceType{
+  background: var(--silver-grey);
+  width: 16rem;
+  border-radius: 1rem;
+  padding: 0.5rem 0.6rem;
+  color: var(--text-color-light);
+}
+
+.serviceType{
+  padding-bottom: 2rem;
+}
+
+
+.modal-content input, textarea{
+  width: 100%;
+  padding: 14px;
+  background: var(--black-color);
+  color: var(--text-color-light);
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 1rem;
+  margin-bottom: 10px;
+}
+
+
+.modal-content textarea{
+  resize: none;
+  height: 240px;
+
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+
+.modal-content label{
+  color: black;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main-text{
+  text-align: center;
+}
+
+.main-text h2{
+  font-family: var(--abel);
+  font-size: 3rem;
+}
+
+/*--------------- Service section ------------*/
+
+.service-box{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  gap: 6rem;
+  align-items: left;
+  margin-top: 5rem;
+ 
+ 
+}
+
+.project-container{
+  background: var(--bg-color-first);
+  box-shadow: 4px 4px 4px 8px rgba(0, 0, 0, 0.12);
+  width: 320px;
+  height: 32rem;
+  padding: 35px 45px;
+  border-radius: 8px;
+  transition: all .45s ease;
+  cursor: pointer;
+}
+
+.project-container:hover{
+  transform: scale(1.1 );
+}
+
+.project-container img{
+  width: 80%;
+  background: var(--silver-grey);
+  border-radius: 8px;
+  display: inline-block;
+  transition: transform 0.5s;
+  display: block;
+  margin-left: 10%;
+  
+ 
+}
+
+.project-container h4{
+  font-size: 1rem;
+  font-family: var(--poppins-Sembold);
+  line-height: 4rem;
+  font-weight: 700;
+}
+
+.project-container p{
+  font-family: var(--poppins-reg);
+  font-size: 0.8rem;
+  color: #CDC0C0;
+  line-height: 1.5rem;
+}
+
+.project-container h4, p{
+  text-align: center;
+}
+
+aside{
+  float: right;
+  border: 3px solid var(--text-color-light);
+  padding: 1rem 1.4rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+
+/*--------------- slider css ------------*/
+
