@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SwiftFix Automobile</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   </head>
 
   <body>
@@ -29,6 +31,11 @@
       <li>
         <a href="#faq" class="menu-link">FAQ</a>
       </li>
+
+      <li>
+        <a href="#reviews" class="menu-link">Reviews</a>
+      </li>
+
       <li>
         <a href="#about-us" class="menu-link">About us</a>
       </li>
@@ -95,7 +102,7 @@
 
     <div class="service-box">
 
-      <div class="project-container">
+      <div class="service-container">
         <img src="images/car-engine.png" alt="">
         <h4>Engine Diagnostics</h4>
           <p>Our advanced engine diagnostics service employs cutting-edge technology to identify and 
@@ -104,7 +111,7 @@
             pinpoint the root cause of engine problems, ensuring optimal functionality.</p>
       </div>
 
-      <div class="project-container">
+      <div class="service-container">
         <img src="images/air-conditioning.png" alt="">
         <h4>Air Conditioning Service</h4>
           <p>Beat the heat with our air conditioning service. We inspect, clean, 
@@ -112,7 +119,7 @@
             Don't let a malfunctioning AC system compromise your comfort—let us keep it in top condition.</p>
       </div>
 
-      <div class="project-container">
+      <div class="service-container">
         <img src="images/car-brakes.png" alt="">
         <h4>Brake System Repair</h4>
           <p>Trust our expert team for comprehensive brake system repairs. 
@@ -120,7 +127,7 @@
             Our precision brake repairs are designed to enhance stopping power and responsiveness.</p>
       </div>
 
-      <div class="project-container">
+      <div class="service-container">
         <img src="images/car-tires.png" alt="">
         <h4>Tire Rotation and Alignment</h4>
           <p>Experience smoother rides and extended tire life with our tire rotation and alignment services. 
@@ -128,7 +135,7 @@
             and precise alignment adjustments ensure proper handling and steering control.</p>
       </div>
 
-      <div class="project-container">
+      <div class="service-container">
         <img src="images/electrical-car.png" alt="">
         <h4>Electrical Maintenance</h4>
           <p>Our electrical system maintenance service covers a thorough inspection and upkeep of 
@@ -140,6 +147,173 @@
 
     <aside class="view-more">View More</aside>
   </section>
+
+
+ <!--------------------------------- FAQ section ------------------------------------------>
+
+
+  <section class="faq" id="faq">
+    <div class="faqHead faq-text">
+      <h2>Frequently Ask
+        <ins>Question</ins></h2>
+        <h4>Answers to some few Questions you might have</h4>
+  </div>
+
+  <div class="faq-container">
+   <div class="faq-accordions">
+
+    <div class="question" onclick="toggleAnswer(1)">
+      <span>What types of vehicle repairs do you specialize in?</span>
+    </div>
+    <div class="answer" id="answer1">
+      <p>We specialize in a wide range of vehicle repairs, 
+        including but not limited to engine diagnostics, 
+        brake systems, electrical issues, and general maintenance.</p>
+    </div>
+  
+    <div class="question" onclick="toggleAnswer(2)">
+      <span>How can I schedule an appointment for my vehicle repair?</span>
+    </div>
+    <div class="answer" id="answer2">
+      <p>Scheduling an appointment is easy!
+        You can do it online through our website or contact us 
+        via phone. Visit the "Appointments" section for more details.
+      </p>
+    </div>
+
+    <div class="question" onclick="toggleAnswer(3)">
+      <span>Are your technicians certified and experienced?</span>
+    </div>
+    <div class="answer" id="answer3">
+      <p>Absolutely. Our technicians are highly trained, 
+        certified professionals with extensive 
+        experience in the automotive repair industry.
+      </p>
+    </div>
+
+    <div class="question" onclick="toggleAnswer(4)">
+      <span>How long does a typical repair or service take?</span>
+    </div>
+    <div class="answer" id="answer4">
+      <p>The duration varies based on the type of service or repair required. 
+        We strive for efficient and timely service, 
+        and our team will provide you with an estimated timeframe.
+      </p>
+    </div>
+
+    <div class="question" onclick="toggleAnswer(5)">
+      <span>Is there a warranty on the repairs?</span>
+    </div>
+    <div class="answer" id="answer5">
+      <p>Yes, we stand behind the quality of our work. 
+        Most repairs come with a warranty. Check our 
+        "Warranty Information" page for details.
+      </p>
+    </div>
+
+    <div class="question" onclick="toggleAnswer(6)">
+      <span>What payment methods do you accept?</span>
+    </div>
+    <div class="answer" id="answer6">
+      <p>We accept various payment methods, including credit cards,
+         debit cards, and cash. Check our "Payment Options" page for more information.
+      </p>
+    </div>
+
+    
+
+
+  
+    <!-- Will Add more questions and answers if needed -->
+    </div>
+
+    <div class="faq-img">
+      <img src="images/faq-img.png" alt="">
+    </div>
+
+  </div>
+
+  </section>
+
+    
+  <div class="others">
+    <h4>Have other Questions?</h4>
+    <button>Send an email <i class='bx bxs-right-arrow-circle'></i></button>
+  
+     </div>
+
+   <!--------------------------------- Reviews section ------------------------------------------>
+
+   <section class="reviews" id="reviews">
+    <div class="revHead rev-text">
+      <ins>Customer's <h2>Reviews</h2></ins>
+  </div>
+
+  <div class="rev-container">
+
+    <div class="rev-box">
+      <img src="./images/review-img/jin-sunny.png" alt="">
+      <h3>Jin Sunny</h3>
+      <p>One of the best service i have
+        had in a while, top notch team
+        thanks for the swift repairs of 
+        my car </p>  
+    </div>
+
+
+    <div class="rev-box">
+      <img src="./images/review-img/jake_clement.png" alt="">
+      <h3>Jake Clement</h3>
+      <p>Brakes feel brand new after their expert repair. 
+        Fast and reliable service. </p>  
+    </div>
+
+
+    <div class="rev-box">
+      <img src="./images/review-img/abeeb-.png" alt="">
+      <h3>Abeeb O</h3>
+      <p>The exhaust system of my car was making quite a racket until I brought it to SwiftFix. 
+        The repair job was fantastic, and now my car is whisper-quiet </p>  
+    </div>
+
+
+    <div class="rev-box">
+      <img src="./images/review-img/kim-flemimg.png" alt="">
+      <h3>Kim Fleming</h3>
+      <p>When my car's air conditioning system started acting up, I turned to them for help. 
+        The service was not only swift but also effective. The cool air is back, and I couldn't be happier. </p>  
+    </div>
+
+
+    <div class="rev-box">
+      <img src="./images/review-img/joe-marsh.png" alt="">
+      <h3>Joe Marsh</h3>
+      <p>My transmission repair was done seamlessly. Car runs smoother than ever right now. </p>  
+    </div>
+
+
+    <div class="rev-box">
+      <img src="./images/review-img/sam-barkley.png" alt="">
+      <h3>Sam Barkley </h3>
+      <p>The tire rotation and alignment services at your company 
+        made a significant difference in the way my car handles.  </p>  
+    </div>
+
+  </div>
+
+   </section>
+
+   <section class="about" id="about">
+
+    
+
+
+
+
+   </section>
+
+
+
 
   <script type="text/javascript" src="script.js"></script>
 </body>

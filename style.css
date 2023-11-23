@@ -25,6 +25,16 @@
     src:url(./fonts/Poppins-SemiBold.ttf);
   }
 
+  @font-face{
+    font-family: poppins-light;
+    src:url(./fonts/Poppins-Light.ttf);
+  }
+
+  @font-face{
+    font-family: poppins-extraLight;
+    src:url(./fonts/Poppins-ExtraLight.ttf);
+  }
+
 
 
   /*KEYFRAMES*/
@@ -167,11 +177,15 @@ header{
     cursor: pointer;
   }
 
+  .home-text button:hover{
+    transform: scale(1.1 );
+
+  }
+
 
 
  
 
-  /* Add your existing styles here */
 
 /* Modal Styles */
 /* The Modal (background) */
@@ -297,7 +311,7 @@ label{
  
 }
 
-.project-container{
+.service-container{
   background: var(--bg-color-first);
   box-shadow: 4px 4px 4px 8px rgba(0, 0, 0, 0.12);
   width: 320px;
@@ -308,11 +322,11 @@ label{
   cursor: pointer;
 }
 
-.project-container:hover{
+.service-container:hover{
   transform: scale(1.1 );
 }
 
-.project-container img{
+.service-container img{
   width: 80%;
   background: var(--silver-grey);
   border-radius: 8px;
@@ -324,21 +338,21 @@ label{
  
 }
 
-.project-container h4{
+.service-container h4{
   font-size: 1rem;
   font-family: var(--poppins-Sembold);
   line-height: 4rem;
   font-weight: 700;
 }
 
-.project-container p{
+.service-container p{
   font-family: var(--poppins-reg);
   font-size: 0.8rem;
   color: #CDC0C0;
   line-height: 1.5rem;
 }
 
-.project-container h4, p{
+.service-container h4, p{
   text-align: center;
 }
 
@@ -350,6 +364,211 @@ aside{
   cursor: pointer;
 }
 
+aside:hover{
+  border: 3px solid var(--red-accent);
+  
+}
 
-/*--------------- slider css ------------*/
+
+/*--------------- FAQ section ------------*/
+
+.faqHead h2{
+  font-family: var(--abel);
+  font-size: 3rem;
+  width: 17rem;
+}
+
+.faqHead h4{
+  color: #CDC0C0;
+  padding: 0.4rem;
+}
+
+.faqHead ins{
+  color: var(--red-accent);
+  font-family: var(--abel);
+
+}
+
+.faq-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  align-items: center;
+  gap: 3.5rem;
+}
+
+
+.faq-container .faq-accordions .question {
+  color: var(--red-accent);
+  cursor: pointer;
+  border-bottom: 1px solid var(--red-accent);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-container .faq-accordions .answer {
+  display: none;
+  padding: 10px;
+
+}
+
+.faq-container .faq-accordions .answer p{
+  text-align: left;
+  color: var(--text-color-light);
+
+}
+
+.faq-container .faq-img img{
+  max-width: 500px;
+  height: auto;
+  width: 100%;
+}
+
+ .others{
+  position: relative;
+  bottom: 5rem;
+ 
+}
+
+
+.others h4{
+  text-align: center;
+  margin-right: 50%;
+}
+
+
+ .others button{
+  background: var(--black-color);
+  color: var(--text-color-light);
+  font-size: 0.6rem;
+  padding: 1rem 1rem;
+  border: none;
+  margin-left: 20rem;
+  margin-top: 1rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+
+
+/*--------------- Review section ------------*/
+
+.reviews{
+  position: relative;
+  width: 100%;
+  background-image: url(images/backg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.reviews .rev-text ins{
+  font-family: var(--abel);
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--red-accent);
+ 
+}
+
+.reviews .rev-text h2{
+  font-family: var(--abel);
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.reviews .rev-text h2,ins{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;
+
+}
+
+.rev-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  align-items: center;
+  gap: 3.5rem;
+  margin-top: 5rem;
+}
+
+.rev-container .rev-box{
+  background: var(--text-color-light);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  opacity: 0.9;
+  width: 310px;
+  height: 45vh;
+  padding: 35px 45px;
+  border-radius: 1rem;
+  transition: all .45s ease;
+}
+
+.rev-container .rev-box img{
+  max-width: 150px;
+  display: flex;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+
+}
+
+.rev-container .rev-box h3,p{
+  text-align: center;
+  color: var(--black-color);
+  padding: 0.2rem;
+  
+}
+
+.rev-container .rev-box p{
+  text-align: left;
+  font-family: poppins-light;
+  font-weight: lighter;
+  line-height: 1.1rem;
+  font-size: 0.8rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 420px) {
+
+  .faq-img {
+    order: 1;
+  }
+
+  .faq-accordions {
+    order: 2; 
+  }
+}
 
