@@ -49,13 +49,14 @@
     --black-color: #000000;
     --red-accent: #FF4136;
 
-    --text-big: 5rem;
+    --text-big: 4rem;
     --text-h2: 3rem;
     --text-p: 1.1rem;
     --inter-semiBold: inter-semiBold;
     --abel: abel;
     --poppins-Sembold: poppins-semBold;
     --poppins-reg: poppins-reg;
+
   }
 
 
@@ -123,6 +124,21 @@ header{
     transition: all .45s ease;
   }
 
+  #bar-icon{
+    font-size: 32px;
+    color: var(--text-color-light);
+    z-index: 1;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+  }
+
+  .main-menu{
+    background: linear-gradient(99deg, #000 62.53%, rgba(255, 65, 54, 0.71) 125.95%, rgba(0, 0, 0, 0.00) 138.44%);
+    padding: 2rem 2rem;
+    border-radius: 4rem;
+  }
+
   .main-menu a:hover{
     color: var(--red-accent);
 
@@ -130,7 +146,7 @@ header{
 
 
   section{
-    padding: 110px 12% 120px;
+    padding: 200px 12% 120px;
   }
 
   .home{
@@ -156,7 +172,7 @@ header{
 
   .home-text h1{
     font-family: var(--abel);
-    font-size: 4rem;
+    font-size: var(--text-big);
     line-height: 4.5rem;
   }
 
@@ -296,7 +312,7 @@ label{
 
 .main-text h2{
   font-family: var(--abel);
-  font-size: 3rem;
+  font-size: var(--text-h2);
 }
 
 /*--------------- Service section ------------*/
@@ -341,7 +357,7 @@ label{
 .service-container h4{
   font-size: 1rem;
   font-family: var(--poppins-Sembold);
-  line-height: 4rem;
+  line-height: 2rem;
   font-weight: 700;
 }
 
@@ -349,7 +365,8 @@ label{
   font-family: var(--poppins-reg);
   font-size: 0.8rem;
   color: #CDC0C0;
-  line-height: 1.5rem;
+  line-height: 1.2rem;
+  text-align: center;
 }
 
 .service-container h4, p{
@@ -374,7 +391,7 @@ aside:hover{
 
 .faqHead h2{
   font-family: var(--abel);
-  font-size: 3rem;
+  font-size: var(--text-h2);
   width: 17rem;
 }
 
@@ -386,7 +403,6 @@ aside:hover{
 .faqHead ins{
   color: var(--red-accent);
   font-family: var(--abel);
-
 }
 
 .faq-container {
@@ -471,7 +487,7 @@ aside:hover{
 
 .reviews .rev-text h2{
   font-family: var(--abel);
-  font-size: 3rem;
+  font-size: var(--text-h2);
   font-weight: 900;
 }
 
@@ -530,6 +546,70 @@ aside:hover{
 
 }
 
+.about{
+  position: relative;
+  width: 100%;
+  background-image: url(images/aboutbg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.about .about-text h2{
+  font-family: var(--poppins-reg);
+  font-size: var(--text-h2);
+  padding-bottom: 1.8rem;
+}
+
+.about .about-text h4{
+  width: 20rem;
+  padding-left: 0.5rem;
+}
+
+.about .about-text h5{
+  padding: 0.4rem;
+  width: 30rem;
+  color: var(--red-accent);
+}
+
+.about-text strong{
+  color: var(--red-accent);
+}
+
+.about .about-text h2,h4,h5{
+  line-height: 1.5rem;
+}
+
+.about .about-text i{
+  color: var(--red-accent);
+  padding-left: 1rem;
+  letter-spacing: 0.4rem;
+}
+
+.about .about-text h3{
+  font-size: 1rem;
+  padding: 2rem;
+  padding-right: 2rem;
+  cursor: pointer;
+}
+
+.about .about-text h3:hover{
+  text-decoration: underline;
+}
+
+
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.about .about-img img{
+  max-width: 500px;
+  height: auto;
+  width: 100%;
+}
 
 
 
@@ -557,6 +637,18 @@ aside:hover{
 
 
 
+
+
+
+
+
+@media (max-width: 1480px){
+  header{
+    padding: 2.5rem 9.5%;
+    transition: .1s;
+  }
+
+}
 
 
 
@@ -572,3 +664,73 @@ aside:hover{
   }
 }
 
+@media (max-width: 1100px){
+  :root{
+    --text-h2: 2.5rem;
+    --text-big: 3.5rem;
+  }
+
+  header{
+    padding: 2.5rem 9.5%;
+
+  }
+
+  .main-menu a{
+    font-size: 12px;
+  }
+
+  .home{
+    height: 87vh;
+  }
+}
+
+@media (max-width: 820px){
+  #bar-icon{
+    display: block;
+    background: var(--red-accent);
+    border-radius: 50%;
+    padding: 4px 4px;
+    font-size: 2.5rem;
+  }
+
+  .main-menu{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -1100px;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(images/hamburger-backg.png);
+    background-size: cover;
+    background-position: center;    
+    transition: all .45s ease;
+  }
+
+  .main-menu a{
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 9rem;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 29px;
+    font-size: 20px;
+    transition: all.45s ease;
+    color: var(--text-color-light);
+  }
+
+  .main-menu a:hover{
+    color: var(--red-accent);
+  }
+
+  .main-menu.open{
+    left: 0;
+  }
+}

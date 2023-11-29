@@ -38,3 +38,24 @@ function toggleAnswer(questionNumber) {
   }
 }
 
+// creating the hamburger
+
+
+let menu = document.querySelector('#bar-icon');
+let menuList = document.querySelector('.main-menu');
+
+menu.onclick = () => {
+  menu.classList.toggle('bx-x');
+  menuList.classList.toggle('open');
+};
+
+
+
+// when window is on sroll
+
+
+window.onscroll = () => {
+  menu.classList.add('bx-menu-alt-left'); // add the hamburger icon
+  menuList.classList.remove('open'); // remove the X icon and replace with hamburger icon
+  menu.classList.remove('bx-x'); //remove the X a
+}; 
