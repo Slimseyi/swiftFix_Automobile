@@ -90,7 +90,8 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    transition: .45s linear;  
+    transition: .45s linear;
+    overflow-x: hidden;  
   }
 
 
@@ -1015,6 +1016,9 @@ aside{
 
 
 @media (max-width: 420px) {
+  body{
+    overflow-x: hidden;
+  }
 
   .home .home-text h1{
     font-size: 34px;
