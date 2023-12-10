@@ -554,7 +554,7 @@ aside{
 }
 
 .rev-container .rev-box:hover{
-  background: var(--silver-grey);
+  transform: translateY(-10px);
 
 }
 
@@ -966,9 +966,71 @@ aside{
   grid-template-columns: repeat(auto-fit, minmax(150px, auto));
 
 }
+
+.others button{
+  margin-left: 6rem;
 }
 
+.rev-container .rev-box{
+  margin-left: 7rem;
+}
+
+.service-container{
+  width: 350px;
+  margin-left: 7rem;
+}
+
+.service-box{
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+
+}
+
+aside{
+  padding-top: 4rem;
+}
+}
+
+@media (max-width: 500px) {
+  .home .home-text h1{
+    font-size: 42px;
+  }
+
+  .service .main-text h2{
+    font-size: 28px;
+  }
+
+  .service-container{
+    margin-left: 4rem;
+  }
+
+  .rev-container .rev-box{
+    margin-left: 4rem;
+  }
+
+  .about .about-img{
+    margin-right: 4rem;
+  }
+}
+
+
+
 @media (max-width: 420px) {
+
+  .home .home-text h1{
+    font-size: 34px;
+  }
+
+  .service-container{
+    margin-left: 2rem;
+  }
+  
+  .others button{
+    margin-left: 3rem;
+  }
+
+  .rev-container .rev-box{
+    margin-left: 2rem;
+  }
 
   .faq-img {
     order: 1;
@@ -1020,15 +1082,54 @@ aside{
  
 }
 
+.service-container{
+  width: 280px;
+  margin-left: 3rem;
+}
+
+.service .service-box .service-container h4{
+  font-size: 18px;
+}
+
 .rev-container .rev-box{
   height: 40vh;
 }
 
 .reviews .rev-text h2{
-  font-size: 34px;
+  font-size: 28px;
 }
 
 .reviews .rev-text ins{
-  font-size: 34px;
+  font-size: 28px;
 }
+
+.about .about-text h5{
+  width: 18rem;
 }
+
+.about .about-text h4{
+  width: 18rem;
+}
+
+.contact .con-text h1{
+  font-size: 38px;
+}
+
+.contact .con-container .con-icons{
+  padding-top: 2rem;
+}
+
+}
+
+@media (max-width: 380px) {
+  .rev-container .rev-box{
+    margin-left: 1rem;
+  }
+
+}
+
+
+
+
+
+
