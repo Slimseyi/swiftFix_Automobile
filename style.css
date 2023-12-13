@@ -157,7 +157,7 @@ header{
 
 
   section{
-    padding: 200px 12% 120px;
+    padding: 180px 12% 120px;
   }
 
   .home{
@@ -689,7 +689,72 @@ aside{
   border: 1px solid var(--text-color-light);
   padding: 12px 12px;
   margin-right: 12px;
+  cursor: pointer;
+}
 
+.contact .con-container .con-icons i:hover{
+  color: var(--bg-color-first);
+  border: 1px solid var(--bg-color-first);
+}
+
+
+.footer{
+  background: var(--black-color);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  gap: 1.5rem;
+}
+
+.footer-box h3{
+  padding-bottom: 1rem;
+  font-size: 24px;
+  color: var(--text-color-light);
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 0;
+}
+
+.footer-box p{
+  font-size: 12px;
+  text-align: left;
+  line-height: 0.8;
+  color: var(--silver-grey);
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.footer .coffee-shop{
+  position: relative;
+  bottom: 3rem;
+}
+
+.socials{
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+}
+
+.socials a .bx{
+  color: var(--text-color-light);
+  font-size: 12px;
+  padding: 10px;
+  background: var(--red-accent);
+  border-radius: 0.2rem;
+}
+
+.socials a .bx:hover{
+  transform: translateY(-4px);
+}
+
+.footer-box li a{
+  font-size: 12px;
+  color: var(--almost-white);
+  line-height: 2;
+}
+
+.footer-box li a:hover{
+  color: var(--red-accent);
 }
 
 
