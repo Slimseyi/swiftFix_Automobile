@@ -950,7 +950,7 @@ aside{
 
   .main-menu{
     height: 100vh;
-     position: absolute;
+    position: absolute;
     top: 0;
     right: 0;
     left: -1100px;
@@ -962,6 +962,7 @@ aside{
     background-size: cover;
     background-position: center;    
     transition: all .45s ease;
+    overflow: hidden;
   }
 
   .main-menu a{
@@ -978,6 +979,7 @@ aside{
     font-size: 14px;
     transition: all.45s ease;
     color: var(--black-color);
+    overflow: hidden;
   }
 
   .main-menu a:hover{
