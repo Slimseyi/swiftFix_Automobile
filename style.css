@@ -100,7 +100,23 @@ body{
   overflow-x: hidden;
 }
 
+.fade-in-delay{
+  opacity: 0;
+  transition: 0.5s linear;
+}
 
+.fade-in-delay.appear-delay{
+  opacity: 1;
+}
+
+.fade-in{
+  opacity: 0;
+  transition: 1s linear;
+}
+
+.fade-in.appear{
+  opacity: 1;
+}
 
 
 header{
@@ -174,6 +190,12 @@ header{
 
   main{
     margin: auto;
+  }
+
+  .main-menu a.selected{
+    color: var(--red-accent);
+    border-bottom: 2px solid var(--red-accent);
+    transition: none;
   }
 
   .home-text{

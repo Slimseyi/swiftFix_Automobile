@@ -59,3 +59,65 @@ window.onscroll = () => {
   menuList.classList.remove('open'); // remove the X icon and replace with hamburger icon
   menu.classList.remove('bx-x'); //remove the X a
 }; 
+
+
+
+
+                    ///////// ONCLICK ACTIVE LINKS ///////
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const menuLinks = document.querySelectorAll(".menu-link");
+
+  menuLinks.forEach(function(link) {
+      link.addEventListener("click", function(event) {
+          
+          menuLinks.forEach(function(otherLink) {
+              otherLink.classList.remove("selected");
+          });
+
+        
+          link.classList.add("selected");
+      });
+  });
+
+  window.addEventListener("scroll", function() {
+      const scrollPosition = window.scrollY;
+      const sections = document.querySelectorAll("section");
+
+      sections.forEach(function(section) {
+          if (section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
+              const sectionId = section.getAttribute("id");
+              menuLinks.forEach(function(link) {
+                 
+                  link.classList.remove("selected");
+                  if (link.getAttribute("href") === `#${sectionId}`) {
+                      link.classList.add("selected");
+                  }
+              });
+          }
+      });
+  });
+});
+
+
+
+
+                              ///////// SCROLL REVEAL USING THE LIBRARY ///////
+
+
+ScrollReveal({
+  reset: true,
+  distance: '150px',
+  duration: 1500,
+  delay: 400
+});
+
+// Reveal specific elements
+ScrollReveal().reveal('.home-reveal, .main-text, .faq-text, .rev-text, .about-text', { delay: 500, origin: 'left' });
+ScrollReveal().reveal('.faq-img, .about-img', { delay: 300, origin: 'right' });
+ScrollReveal().reveal('.question, .foot-icon', { delay: 300, origin: 'left', interval: 300});
+ScrollReveal().reveal('.rev-box', { delay: 300, origin: 'bottom', interval: 300});
+
+
+
